@@ -113,35 +113,36 @@
         </form>
     </div>
     ```html
+```html
 <script>
-    // Task 1: Popup Boxes and Conditional Logic
+    document.getElementById("processBtn").addEventListener("click", function () {
 
-    let confirmation = confirm("Are you sure?");
+        // Task 1: Confirm box
+        let confirmation = confirm("Are you sure?");
 
-    if (confirmation === false) {
-        alert("Operation cancelled.");
-    } else {
+        if (confirmation === false) {
+            alert("Operation cancelled.");
+            return;
+        }
 
-        // Task 2: Arrays & Output
-
+        // Task 2: Array and for...of loop
         let subjects = ["JavaScript", "HTML", "CSS"];
 
         for (let subject of subjects) {
             document.write(subject + "<br>");
         }
 
-
-        // Task 3: Standard Loops and Document Output
-
+        // Task 3: Standard for loop
         let valueA = Number(document.getElementById("numA").value);
         let studentName = document.getElementById("studentName").value;
 
         for (let i = 0; i < valueA; i++) {
             document.write(studentName + "<br>");
         }
-    }
+    });
 </script>
 ```
+
 
 </body>
 </html>
