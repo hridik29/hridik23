@@ -133,7 +133,22 @@ let valueB = Number(document.getElementById("numB").value);
 
 let result = valueA / valueB;
 
-alert("Result of division: " + result);
+// Task 3: Testing NaN
+let wordValue = document.getElementById("wordValue").value;
+
+let nanResult = wordValue / 2;
+
+
+// Task 4: Scientific Notation
+let largeNumber = 4.25e+6;
+let smallNumber = 4.25e-6;
+
+
+// Task 5: Output using document.write()
+document.write("Task 2 - Division Result: " + result + "<br>");
+document.write("Task 3 - NaN Result: " + nanResult + "<br>");
+document.write("Task 4 - Large Number: " + largeNumber + "<br>");
+document.write("Task 4 - Small Number: " + smallNumber + "<br>");
     });
 </script>
 </body>
