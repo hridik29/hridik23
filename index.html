@@ -112,44 +112,36 @@
             <button type="button" id="processBtn">Process Data</button>
         </form>
     </div>
-    <script>
-    document.getElementById("processBtn").addEventListener("click", function () {
+    ```html
+<script>
+    // Task 1: Popup Boxes and Conditional Logic
 
-        // Store the values in variables
+    let confirmation = confirm("Are you sure?");
+
+    if (confirmation === false) {
+        alert("Operation cancelled.");
+    } else {
+
+        // Task 2: Arrays & Output
+
+        let subjects = ["JavaScript", "HTML", "CSS"];
+
+        for (let subject of subjects) {
+            document.write(subject + "<br>");
+        }
+
+
+        // Task 3: Standard Loops and Document Output
+
+        let valueA = Number(document.getElementById("numA").value);
         let studentName = document.getElementById("studentName").value;
-        let studentAge = document.getElementById("studentAge").value;
-        let isEnrolled = document.getElementById("isEnrolled").checked;
 
-        // String concatenation using +
-        let message = "Student Name is " + studentName +
-                      ", Age is " + studentAge +
-                      ", Enrolled status is " + isEnrolled;
-
-        // Display the sentence
-        alert(message);
-        // Task 2: Testing Infinity
-let valueA = Number(document.getElementById("numA").value);
-let valueB = Number(document.getElementById("numB").value);
-
-let result = valueA / valueB;
-
-// Task 3: Testing NaN
-let wordValue = document.getElementById("wordValue").value;
-
-let nanResult = wordValue / 2;
-
-
-// Task 4: Scientific Notation
-let largeNumber = 4.25e+6;
-let smallNumber = 4.25e-6;
-
-
-// Task 5: Output using document.write()
-document.write("Task 2 - Division Result: " + result + "<br>");
-document.write("Task 3 - NaN Result: " + nanResult + "<br>");
-document.write("Task 4 - Large Number: " + largeNumber + "<br>");
-document.write("Task 4 - Small Number: " + smallNumber + "<br>");
-    });
+        for (let i = 0; i < valueA; i++) {
+            document.write(studentName + "<br>");
+        }
+    }
 </script>
+```
+
 </body>
 </html>
